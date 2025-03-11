@@ -4,6 +4,7 @@ import com.testemagalu.agendamento_notificacao_api.controller.dto.in.Agendamento
 import com.testemagalu.agendamento_notificacao_api.controller.dto.out.AgendamentoRecordOut;
 import com.testemagalu.agendamento_notificacao_api.infrastructure.entities.Agendamento;
 import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
 import org.springframework.web.bind.annotation.Mapping;
 
 import static org.mapstruct.MappingConstants.ComponentModel.SPRING;
