@@ -30,7 +30,6 @@ public class AgendamentoService {
     public void cancelarAgendamento(Long id){
         Agendamento agendamento = repository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Id não encontrado"));
-
         repository.save(
                 agendamentoMapper.paraEntityCancelamento(agendamento));
     }
